@@ -1,1 +1,3 @@
-# java-project-study
+# inflearn
+## 스프링 핵심 원리 - 기본편
+김영한님의 강의를 토대로 공부하는 repo입니다.
