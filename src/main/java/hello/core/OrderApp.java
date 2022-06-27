@@ -11,8 +11,10 @@ import hello.core.order.OrderServiceImpl;
 public class OrderApp {
     // main 메소드로 테스트 하는건 좋지 않다. 자동화된 테스트로 해야한다.
     public  static void main(String[] args){
-        MemberService memberService = new MemberServiceImpl();
-        OrderService orderService = new OrderServiceImpl();
+
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+        OrderService orderService = appConfig.orderService();
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
